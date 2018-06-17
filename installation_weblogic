@@ -1,0 +1,18 @@
+9  mkdir -p /u01/app/oraInventory
+   15  ls /u01/app/oraInventory
+   16  ls /u01/
+   17  ls -l /u01/
+   18  tree /u01/
+   22  cd /u01/app/oracle/middleware/
+   54  ls -ls /u01/
+   55  ls -ls /u01/app/
+   64  cd /u01/
+  104  cd /u01/app/oracle/
+  121  export wl_home=/u01/app/oracle/middleware/
+  140  ls /u01/app/oracle/admin/
+  141  ls /u01/app/oracle/admin/domain/
+  142  ls /u01/app/oracle/admin/domain/test_domain/
+  147  cd /u01/app/oracle/middleware/oracle_common/common/bin/
+  184  chown -R oracle|oracle /u01/app/oracle/admin/
+  185  chown -R oracle:oracle /u01/app/oracle/admin/
+  191  cd /u01/app/oracle/admin/domain/test_domain/servers/AdminServer/logs/
