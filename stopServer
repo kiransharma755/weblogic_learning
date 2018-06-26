@@ -1,0 +1,11 @@
+create a file , lets say stopServer.py 
+invoke wlst agains this file eg
+
+pathtowlst/wlst.sh  stopServer.py 
+here is the actual script
+
+connect('weblogic', 'weblogic1', 't3://10.0.0.119:7001')
+
+cd('domainRuntime:/ServerLifeCycleRuntimes/'+'Server-5');
+cmo.forceShutdown();
+
