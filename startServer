@@ -1,0 +1,10 @@
+steps
+put the follwoing llne into a file , lets say startServer.py 
+invoke wlst and give this as a parameter
+
+
+connect('weblogic', 'weblogic1', 't3://10.0.0.119:7001')
+
+cd('domainRuntime:/ServerLifeCycleRuntimes/'+'Server-5');
+cmo.start();
+
