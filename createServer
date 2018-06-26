@@ -1,0 +1,33 @@
+../../../middleware/oracle_common/common/bin/wlst.sh server5.py
+connect('weblogic', 'weblogic1', 't3://10.0.0.119:7001')
+edit ()
+startEdit()
+
+cd('/')
+cmo.createServer('Server-6')
+
+cd('/Servers/Server-6')
+cmo.setListenAddress('10.0.0.143')
+cmo.setListenPort(7014)
+
+activate()
+
+startEdit()
+
+cd('/')
+cmo.createMachine('Machine-6')
+
+cd('/Machines/Machine-6/NodeManager/Machine-6')
+cmo.setNMType('Plain')
+cmo.setListenAddress('10.0.0.143')
+cmo.setListenPort(6666)
+cmo.setDebugEnabled(false)
+
+activate()
+
+startEdit()
+
+cd('/Servers/Server-6')
+cmo.setMachine(getMBean('/Machines/Machine-6'))
+
+activate()
