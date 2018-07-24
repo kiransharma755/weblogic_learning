@@ -1,0 +1,8 @@
+import os
+os.environ["MY_DATA"] = "my_export"
+
+print os.environ.get('MY_DATA')
+
+>>> os.system('export MY_DATA')
+0
+>>> print os.environ.get('MY_DATA')
