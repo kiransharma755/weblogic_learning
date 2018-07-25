@@ -6,3 +6,21 @@ print os.environ.get('MY_DATA')
 >>> os.system('export MY_DATA')
 0
 >>> print os.environ.get('MY_DATA')
+
+
+print var
+
+os.system('bash -c \'echo "export anumber=100000" >> ~/.bashrc\'')
+os.system('bash -c \'source ~/.bashrc\'')
+
+var=os.environ.get('anumber')
+print var
+
+os.system("export name = %s" %("Kiran"))
+
+print os.environ.get('name')
+
+
+os.environ["MY_DATA"] = "my_export"
+
+print os.environ.get('MY_DATA')
